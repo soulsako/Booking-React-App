@@ -10,7 +10,8 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   border-bottom: ${props => props.borderBottom ? '1px solid #f7f7f7' : null};
-  padding: 15px 30px 15px 10px;
+  padding: 1.5rem 3rem 1.5rem 1rem;
+  overflow: hidden;
 `;
 
 const Logo = styled.img.attrs({
@@ -21,16 +22,16 @@ width: 100%;
 `;
 
 const LogoDiv = styled.div`
-  width: 100px;
-  height: 13.5px;
+  width: 10rem;
+  height: 1.35rem;
   margin-right: auto;
 `;
 
 const Image = styled.img`
 
-  width: 35px;
-  height: 35px;
-  margin-right: 10px;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1rem;
 `;
 
 const IconDiv = styled.div`
@@ -39,7 +40,6 @@ const IconDiv = styled.div`
   justify-content: center;
   color: #fff;
   border-right: 1px solid #f8f8f8;
-
 `;
 
 const Text = styled.p`
@@ -53,7 +53,7 @@ class Header extends React.Component {
   }
 
   onToggleNavHandler = () => {
-    this.setState({showNav: !this.state.showNav})
+    this.setState({showNav: !this.state.showNav}, () => this.props.navEnabled(this.state.showNav))
   }
   render() { 
 

@@ -9,7 +9,7 @@ const ModalContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   position: absolute;
-  top: 65px;
+  top: 6.5rem;
   left: 0;
   flex: 1;
 `;
@@ -22,7 +22,7 @@ const Li = styled.li`
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
-  padding: 15px 0px 15px 15px;
+  padding: 1.5rem 0px 1.5rem 1.5rem;
   color: #096FB9;
 `;
 
